@@ -105,6 +105,8 @@ h6 {
 .warning {
   background-color: green;
   padding: 16px;
+  -webkit-box-shadow: 3px 3px 3px red;
+          box-shadow: 3px 3px 3px red;
 }
 
 .error {
