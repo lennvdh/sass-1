@@ -3,12 +3,14 @@
 }
 $redpadding: 16px;
 $bluepadding: 8px;
+$articleborder: 1px silver solid;
+$blue: blue;
 
 
 
 body {
     font: 100% "Space Mono", monospace;
-    color: #2748B3;
+    color: $blue;
     margin: 0px;
     padding: 0px;
     background-color: #000;
@@ -25,7 +27,7 @@ article {
         @include boxshadow();
         flex-grow: 1;
         flex-basis: 45%;
-        border: 1px silver solid;
+        border: $articleborder;
         padding: $redpadding;
         margin: 16px;
         clear: both;
@@ -38,7 +40,7 @@ article {
     }
     code {
         background: #000;
-        border: 1px solid #ddd;
+        border: $articleborder;
         color: #666;
         page-break-inside: avoid;
         font-family: monospace;
@@ -92,6 +94,7 @@ h6 {
 .success {
     background-color: green;
     padding: $redpadding;
+    box-shadow: 3px 3px 3px blue;
 }
 
 .error {
